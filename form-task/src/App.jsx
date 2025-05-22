@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products") // 🔁 Replace with your backend URL
+      .get("http://localhost:5000/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("Product fetch error:", err));
   }, []);
